@@ -1,0 +1,35 @@
+<div>REALIZAR PEDIDO - PASO 3</div>
+
+<div>resumen del pedido:</div>
+
+<div>productos del pedido:</div>
+<div id="productos_pedido">
+	{{#videojuegos}}
+		<div style="padding: 10px;">
+			nombre: {{nombre}} <br>
+			<img style="height: 60px;" src="subidas/{{videojuego_id}}.jpg"/> <br>
+			cantidad: {{cantidad}} <br>
+			precio/unidad: {{precio_videojuego}} &euro;<br>
+		</div>
+	{{/videojuegos}}
+</div>
+
+<div>datos de envio:</div>
+<div id="datos_envio" style="margin: 15px">
+	nombre completo: {{nombreCompleto}} <br>
+	direccion: {{direccion}} <br>
+	provincia: {{provincia}} <br>
+	codigo postal: {{codigoPostal}} <br>
+	pais: {{pais}}
+</div>
+
+<div>datos de pago:</div>
+<div id="datos_pago" style="margin: 15px">
+	tipo tarjeta: {{tipoTarjeta}} <br>
+	titular tarjeta: {{titularTarjeta}} <br>
+	numero tarjeta: {{numeroTarjeta}} <br>
+</div>
+
+<div>
+	<button id="boton_confirmar_pedido" class="btn btn-primary btn-lg mt-2">CONFIRMAR PEDIDO</button>
+</div>

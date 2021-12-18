@@ -1,0 +1,9 @@
+<div style="text-align: center;" class="h3">My Orders</div>
+{{#.}}
+	<ul class="list-group mt-3">
+		<li class="list-group-item list-group-item-primary"><b>order:</b> {{id}}</li>
+		<li class="list-group-item list-group-item-primary"><b>address:</b> {{direccion}}</li>
+		<li class="list-group-item list-group-item-primary"><b>status:</b> {{estado}}</li>
+		<li class="list-group-item list-group-item-primary"><a class="btn btn-success enlace_detalles_pedido" id_pedido="{{id}}" href="#">See Products</a></li>
+	</ul>
+{{/.}}
