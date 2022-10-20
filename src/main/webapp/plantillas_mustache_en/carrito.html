@@ -1,0 +1,18 @@
+<div style="text-align: center;" class="h3">Shopping Cart</div>
+{{#.}}
+	<div style="margin-left: 5px; margin-top: 15px;">
+		<a style="text-decoration: none; color: black;" href="#" id_producto="{{id}}" class="enlace_detalles">
+			<ul class="list-group">
+				  <li class="list-group-item list-group-item-primary"><b>name:</b> {{nombre}}</li>
+				  <li class="list-group-item list-group-item-primary"> <img src="subidas/{{videojuego_id}}.jpg?t={{fecha_hora_actual}}" style="height: 80px"/> </li>
+				  <li class="list-group-item list-group-item-primary"><b>price:</b> {{precio_videojuego}} &euro;</li>
+				  <li class="list-group-item list-group-item-primary"><b>quantity:</b> <input type="number" id-producto="{{videojuego_id}}" class="input_cantidad" value="{{cantidad}}"/></li>
+				  <li class="list-group-item list-group-item-primary"><a href="#" class="enlace_borrar_producto btn btn-danger mt-2" id-producto="{{videojuego_id}}">drop product</a></li>
+			</ul>
+		</a>
+	</div>
+{{/.}}
+</div>
+<div style="text-align: center; font-size: 1.5em; padding: 10px;">
+	<a href="#" id="realizar_pedido" class="btn btn-primary btn-lg">MAKE AN ORDER</a>
+</div>

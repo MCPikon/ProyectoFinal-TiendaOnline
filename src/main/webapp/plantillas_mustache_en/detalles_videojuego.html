@@ -1,0 +1,53 @@
+
+<div style="text-align: center;font-size: 2em">{{nombre}}</div>
+<div>
+
+<div class="row">
+	<div class="col-3">
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="subidas/{{id}}.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="subidas/{{id}}D.jpg" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+	</div>
+	
+	<!-- 	<div style="float: left"> -->
+	<!-- 		<img style="height: 250px" src="subidas/{{id}}.jpg"/> -->
+	<!-- 	</div> -->
+	<!-- 	<div style="float: left"> -->
+	<!-- 		<img style="height: 250px" src="subidas/{{id}}D.jpg"/> -->
+	<!-- 	</div> -->
+	<div class="col-9">
+		<div>
+			<div>
+				{{descripcion}}
+			</div>
+			<div>price: {{precio_videojuego}}</div>
+			<div>
+				quantity: <input id="campo_cantidad" type="number" value="1"/> 
+			</div>
+			<div>
+				This product have {{likes}} likes
+			</div>
+			<div>
+				<a href="#" id="enlace_like" class="btn btn-danger m-1" id_producto="{{id}}"><span class="material-icons">favorite</span></a>
+				<a href="#" id="enlace_comprar" class="btn btn-primary m-1" id_producto="{{id}}">BUY PRODUCT</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>

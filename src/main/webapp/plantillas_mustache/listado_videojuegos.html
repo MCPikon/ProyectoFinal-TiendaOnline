@@ -1,0 +1,25 @@
+<div class="container">
+<div style="text-align: center;" class="h3 m-2">&Uacute;ltimos productos disponibles:</div>
+
+<div class="row gy-3">
+{{#.}}
+	
+		<div class="col-lg-3 col-md-3 col-sm-12">
+			<a style="text-decoration: none; color: black;" href="#" id_producto="{{id}}" class="enlace_detalles">
+				<div class="card border-primary h-100" style="width: 18rem;">
+				  <img src="subidas/{{id}}.jpg?t={{fecha_hora_actual}}" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">{{nombre}}</h5>
+				    <h5 class="card-title mb-2">{{precio_videojuego}} &euro;</h5>
+				    <p class="card-text">{{descripcion}}</p>
+				    <p class="card-text"><b>categoria:</b> {{nombre_categoria}}</p>
+				    <a href="#" id_producto="{{id}}" class="btn btn-primary mt-2 w-auto enlace_detalles">ver producto</a>
+				  </div>
+				</div>
+			</a>
+		</div>
+	
+{{/.}}
+</div>
+
+</div>
